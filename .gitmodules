@@ -1,0 +1,9 @@
+[submodule "daemon"]
+	path = daemon
+	url = git@github.com:KomicAPI/Komic-Crawler-daemon.git
+[submodule "api"]
+	path = api
+	url = git@github.com:KomicAPI/Komic-API.git
+[submodule "crawlers/8comic"]
+	path = crawlers/8comic
+	url = git@github.com:KomicAPI/Komic-contrib-8comic.git
