@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+var crawler = require('../crawler/index'),
+	db = require('../lib/db'),
+	log = require('../lib/log');
+
+crawler.craw('chapter').then(function () {
+	db.close();
+}).catch(function (e) {
+	log.error('error ', e);
+	db.close();
+});

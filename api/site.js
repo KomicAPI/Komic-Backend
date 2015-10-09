@@ -4,7 +4,6 @@ var express = require('express'),
 var siteModel = require('../models/site'),
 	comicModel = require('../models/comic');
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
 	siteModel.findAll().then(function (result) {
 		res.json({results: result});

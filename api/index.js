@@ -6,7 +6,6 @@ var sites = require('./site'),
 	chapters = require('./chapter'),
 	search = require('./search');
 
-/* GET home page. */
 router.use('/sites', sites);
 router.use('/comics', comics);
 router.use('/chapters', chapters);

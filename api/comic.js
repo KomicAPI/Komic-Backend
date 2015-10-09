@@ -4,7 +4,6 @@ var express = require('express'),
 var comicModel = require('../models/comic'),
 	chapterModel = require('../models/chapter');
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
 	comicModel.findAll().then(function (result) {
 		res.json({results: result});
